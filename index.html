@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>project_Jobfreak</title>
+  <style>
+    body {
+      background-color: #fff;
+      
+    }
+
+    .header {
+      background-color: #3433333f;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .left-panel {
+      width: 200px;
+      height: 250vh;
+      background: #e6e6e6;
+      float: left;
+      padding: 10px;
+    }
+
+    .left-panel h3 {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 30px;
+      background-color: #fff;
+    }
+
+    .hover_color:hover {
+      color: black;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .center{
+      width: 800px;
+      font-size: large;
+    }
+
+    .shadow{
+      text-shadow: 2px 2px 4px black;
+    }
+
+    div.list{
+      text-align: center;
+    }
+
+    .img{
+      height: 250px;
+      width: 300px;
+    }
+
+    .footer{
+      background-color: #3433333f;
+      text-align: center;
+      position: fixed;
+      padding: 10px 10px 0px 10px;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      
+    }
+
+    ol.ord{
+      display: inline-block;
+      text-align: left  ;
+    }
+  </style>
+  <script>
+    function showContent(id) {
+      var contentSections = document.getElementsByClassName("content-section");
+      for (var i = 0; i < contentSections.length; i++) {
+        contentSections[i].classList.add("hidden");
+      }
+      document.getElementById(id).classList.remove("hidden");
+    }
+  </script>
+  
+</head>
+<body>
+  <div class="header">
+    <hr>
+    <h1 class="shadow">STAR LIBRARY</h1>
+    <h4>(Knowledge Is Power)</h4>
+    <hr>
+  </div>
+  <div class="left-panel">
+    <h3><a href="#" onclick="showContent('home')" class="hover_color">Home</a></h3>
+    <hr>
+    <h3><a href="#" onclick="showContent('information')" class="hover_color">Information</a></h3>
+    <hr>
+    <h3><a href="#" onclick="showContent('guide')" class="hover_color">Guide</a></h3>
+    <hr>
+    <h3><a href="#" onclick="showContent('contact')" class="hover_color">Contact</a></h3>
+  </div>
+  <div class="content">
+    <div id="home" class="content-section">
+      <center><h2 style="text-shadow: 1px 1px 2px black;">Primary Details</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBalXwAjhhBoT3c0r2lK_3sJTf_trPAA3Prg&usqp=CAU">
+      <div class="center"><h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><b>Welcome to Our Library...!</b></h3>
+
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><b>Discover a World of Knowledge and Imagination</b></h3>
+        
+        At our library, we believe in the power of books to inspire, educate, and transform lives. Step into our welcoming space and embark on a journey where stories come alive, knowledge knows no bounds, and imaginations soar.<br><br>
+        
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Explore a Vast Collection</h3>
+        
+        Immerse yourself in a treasure trove of books spanning various genres, from timeless classics to contemporary bestsellers. Our extensive collection covers everything from fiction and non-fiction to history, science, arts, and much more. Whether you're seeking an escape into a captivating novel or conducting research for your academic pursuits, our shelves are filled with limitless possibilities.<br><br>
+        
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Engage in Lifelong Learning</h3>
+        
+        Beyond books, our library is a hub of learning and discovery. Join us for enlightening workshops, thought-provoking discussions, and engaging events that cater to all ages and interests. Expand your horizons through our guest speaker series, participate in book clubs, or unlock new skills through our interactive workshops. With a vibrant community of like-minded individuals, there's always something exciting happening at our library.<br><br>
+        
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Unleash Your Creativity</h3>
+        
+        Fuel your creative spirit with our dedicated spaces for arts and crafts, writing, and multimedia creation. Express yourself through painting, writing, or digital media, and bring your ideas to life. Our library provides the resources and support you need to unleash your creativity and explore new avenues of self-expression.<br><br>
+        
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Nurture Young Minds</h3>
+        
+        Inspire a love for reading and learning in the next generation. Our library offers a range of programs designed especially for children and young adults. From storytelling sessions and educational workshops to interactive exhibits, we foster a nurturing environment that encourages curiosity, critical thinking, and a lifelong passion for knowledge.<br><br>
+        
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Embrace the Digital Age</h3>
+        
+        We understand the evolving landscape of information and technology. Alongside our physical collection, we provide a seamless digital experience. Access e-books, audiobooks, online databases, and research materials from the comfort of your home or on the go. Our library's website and digital platforms ensure that knowledge is accessible to all, anytime, anywhere.
+      </div>
+      </center>
+    
+    </div>
+    
+    <div id="information" class="content-section hidden">
+      <center><h2 style="text-shadow: 1px 1px 2px black;">Information</h2>
+      <div class="center"><strong>Importing and Exporting Books:</strong> Broadening Our Literary Horizons<br>
+        At our library, we understand the importance of bringing diverse voices and perspectives to our shelves. To enrich our collection and provide a wide range of reading options to our community, we actively engage in importing and exporting books. This process allows us to access literary treasures from around the world and share them with our readers. Here are some notable books that have found their way into our library through importing and exporting:<br><br></center>
+        <div class="list"><ol class="ord" >
+        <b><li>)"One Hundred Years of Solitude" by Gabriel Garcia Marquez (Colombia)</li><br>
+        <li>)"The Alchemist" by Paulo Coelho (Brazil)</li><br>
+        <li>)"Pride and Prejudice" by Jane Austen (United Kingdom)</li><br>
+        <li>)"To Kill a Mockingbird" by Harper Lee (United States)</li><br>
+        <li>)"The Kite Runner" by Khaled Hosseini (Afghanistan)</li><br>
+        <li>)"The Diary of a Young Girl" by Anne Frank (Netherlands)</li><br>
+        <li>)"A Thousand Splendid Suns" by Khaled Hosseini (Afghanistan)</li><br>
+        <li>)"The Catcher in the Rye" by J.D. Salinger (United States)</li><br>
+        <li>)"The Great Gatsby" by F. Scott Fitzgerald (United States)</li><br>
+        <li>)"Crime and Punishment" by Fyodor Dostoevsky (Russia)</li></b><br><br>
+        </ol></div>
+         <center><p class="center">These are just a few examples of the remarkable books that have been imported into our library. By diversifying our collection through importing, we strive to provide a global literary experience to our readers. These books offer unique perspectives, cultural insights, and captivating storytelling that transcend borders and enrich our understanding of the human experience.<br><br>
+        
+        Additionally, our library actively participates in the exchange of books through exporting. We share selected works from our collection with other libraries and literary institutions, allowing readers around the world to discover the literary gems that we hold. Through this process, we contribute to the global circulation of knowledge and foster connections among diverse reading communities.<br><br>
+        
+        Importing and exporting books not only expands our collection but also fosters cultural exchange, promotes intercultural understanding, and celebrates the richness of literature from various countries and traditions. It enables us to offer a truly global reading experience to our visitors, encouraging them to explore different cultures, histories, and perspectives.<br><br>
+        
+        We continuously strive to enhance our collection through careful selection, collaboration with publishers, and engagement with international literary networks. By importing and exporting books, we embrace the interconnectedness of the literary world, ensuring that our library remains a gateway to a vast literary landscape for our community.</p></div></center>
+    </div>
+    <div id="guide" class="content-section hidden">
+      <table>
+        <tr>
+          <td>
+            <div class="center"><h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><center>Join Our Community</center></h3>
+
+              Discover a community of book lovers, learners, and creative minds. Connect with fellow enthusiasts, engage in lively conversations, and forge lasting friendships. Our library is a place where people come together to share ideas, collaborate, and celebrate the joy of learning.
+              
+              <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><center>Visit Us Today</center></h3>
+              
+              We invite you to visit our library and explore the boundless world of books and ideas. Step through our doors, browse the shelves, and embark on an adventure of the mind. Uncover new perspectives, ignite your curiosity, and let your imagination take flight. At our library, knowledge awaits, and every story has the power to transform lives.
+              
+              Come and be a part of our vibrant community of learners, dreamers, and explorers. Start your journey with us today!</div>
+          </td>
+          <td>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6dwLS7U-uimMnku5xfPrNsFl_XWdClVNjPQ&usqp=CAU" class="img">
+          </td>
+        </tr>
+      </table>
+
+      
+      
+    
+    </div>
+    <div id="contact" class="content-section hidden">
+      <center><h2 style="text-shadow: 1px 1px 2px black;">Contact Us</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkEYCMr3kWFvhXgjk3OLq5WWc3xqAJmDWbIg&usqp=CAU">
+
+      
+      <p><b>Library Address :</b>
+        123 Main Street<br>
+        
+        City, State, ZIP Code<br><br>
+        
+        <b>Library Hours</b><br>
+        Monday - Friday: 9:00 AM - 6:00 PM<br>
+        
+        Saturday: 10:00 AM - 4:00 PM<br>
+        
+        Sunday: Closed</p>
+      <p><b><u>phone</u> :</b> 1123456789</p>
+      <p><b><u>Email</u> :</b> abc@gmail.com</p>
+      <p><b><u>linkedin</u> :</b> 2uhgwi8iguwe</p></center>
+    </div>
+  </div>
+  <footer class="footer" >&copy;Copyright 2023 All rights Reserved</footer>
+</body>
+</html>
